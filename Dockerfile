@@ -13,7 +13,7 @@ RUN echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main" >> /etc/ap
 
 RUN apt-get -y install php5.6 php5.6-gd php5.6-ldap \
     php5.6-sqlite php5.6-pgsql php5.6-mysql \
-    php5.6-mcrypt php5.6-xmlrpc php5.6-fpm
+    php5.6-mcrypt php5.6-xmlrpc php5.6-fpm php5.6-dom php5.6-xmlwriter
 
 RUN sed -i '/daemonize /c \
 daemonize = no' /etc/php/5.6/fpm/php-fpm.conf
